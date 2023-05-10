@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align : justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+
+        }
+        #aqua{
+            background-color: aquamarine;
+
+        }
+        #voilet{
+            background-color: #ce9aff;
+        }
+        #black{
+            background-color: black;
+
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="voilet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+ 
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1934,h_993/https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae iste doloribus at architecto quidem officiis alias in harum, non illo recusandae nostrum animi odit quos explicabo perferendis ipsam ratione impedit temporibus vel, aspernatur cumque nesciunt molestiae laudantium? Distinctio quisquam vitae illo sapiente impedit dolore repudiandae eaque natus assumenda itaque corrupti labore incidunt molestias deserunt facilis illum cupiditate ratione, aliquam officia ducimus similique dignissimos deleniti? Iure ex libero repellendus rem explicabo exercitationem dolores assumenda recusandae ut sapiente, autem non reprehenderit voluptate tenetur modi alias esse vero voluptatem animi ab? Animi minima doloribus aut in perspiciatis voluptate sapiente hic dolore corporis nulla vero quos consequatur earum dolores eveniet ullam non eaque porro laudantium, quia nisi ex sed officiis molestiae? Quibusdam sit beatae placeat quos soluta animi odio temporibus dolorem quisquam, porro sequi quasi aliquid nam dicta nobis maiores praesentium, eveniet nihil fuga necessitatibus repudiandae facilis id. Suscipit sed mollitia impedit voluptates hic obcaecati corrupti magnam, nemo placeat doloremque quaerat iure numquam deserunt ducimus! Asperiores pariatur labore deleniti veritatis fugit quas corporis voluptatum. Natus praesentium fugiat placeat, in similique velit consectetur vitae error voluptatem incidunt reprehenderit ipsam, provident assumenda quibusdam deserunt, labore eum? Aliquam vel enim, earum perferendis eaque deserunt autem ea amet doloribus explicabo eveniet recusandae incidunt praesentium corporis consequuntur vero eum dicta, cumque iste rerum odit quidem voluptatibus nulla? Rem optio laboriosam cum itaque? Quia, est pariatur corrupti tempore sint obcaecati enim, doloribus quod cupiditate quisquam ex accusamus quas vitae sunt iusto eaque vero inventore. Doloremque, nulla magnam. Ducimus vel deserunt sit quae perspiciatis dolore sed. Animi doloribus excepturi, tenetur aliquam, laborum veniam quaerat voluptate a aspernatur reiciendis iusto illo facilis, adipisci doloremque explicabo distinctio recusandae culpa rerum facere ducimus quia totam dolores autem atque. Velit blanditiis architecto sapiente odit a distinctio impedit commodi amet, doloremque magni dolores, placeat voluptatem, tempore quidem expedita ex iure alias aut facilis recusandae aperiam laborum est nobis? Exercitationem animi, aut non eos hic dolorum sint architecto ullam incidunt autem aliquid dolorem nisi soluta, error tenetur quo veritatis voluptate, sed harum sunt quas! Sint, molestiae? Voluptate est mollitia blanditiis reprehenderit cupiditate eius deserunt atque expedita, inventore, odio culpa excepturi distinctio corrupti enim nisi magni consectetur quisquam nam eum maiores dicta, sint quam doloribus. Amet illum pariatur quos voluptatem provident, ab, fugiat impedit iste temporibus cupiditate, sequi dignissimos? Minima modi sequi deserunt error, iusto facere, quasi excepturi cum reiciendis nulla officia fugit reprehenderit accusantium nesciunt sed veritatis pariatur laboriosam explicabo, optio id. Nobis aut exercitationem quia. Quibusdam fuga, quidem consectetur harum dignissimos, atque corrupti deleniti facere nam optio qui doloribus unde recusandae, ea obcaecati. Quos, quo, consequuntur facilis doloribus et fuga quaerat facere magnam neque tempora incidunt cum excepturi minus dolorum nesciunt blanditiis corporis ipsum expedita. Quia molestias voluptatem reiciendis nemo praesentium facilis aperiam rerum, atque, rem enim sapiente excepturi nulla aliquid autem dignissimos architecto adipisci voluptates odit. Qui odit deserunt eum nulla voluptatem, accusamus, et itaque porro tempora, ut reiciendis consequatur officiis doloribus molestiae? Dignissimos aspernatur placeat eligendi facere quas a velit. Neque amet blanditiis veritatis?
+
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }
+            else{
+                    for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
